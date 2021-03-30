@@ -103,7 +103,7 @@ vendor/lib64/libgf_hal.so
 vendor/etc/qdcm_calib_data_mipi_mot_vid_focal_1080p_653.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_nova_1080p_653.xml
 
-# Camera Firmware
+# CameraFirmware
 vendor/firmware/CAMERA_ICP.elf
 vendor/firmware/AbovCapSense.BIN
 vendor/etc/camera/arcsoft_calibration_u_dc.bin
@@ -112,6 +112,11 @@ vendor/etc/camera/dual_golden_wide.bin
 vendor/etc/camera/vidhance_calibration
 
 # Camera
+vendor/lib64/libsnsapi.so
+vendor/lib64/hw/camera.qcom.so
+vendor/lib64/libcamera_nn_stub.so
+vendor/lib64/unnhal-acc-hvx.so
+vendor/lib64/libmot_gt9767_recovery.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov02a10_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov2180_eeprom.so
@@ -224,7 +229,6 @@ vendor/lib64/camera/components/com.vidhance.node.eis.so
 vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so
 vendor/lib64/camera/components/libdepthmapwrapper.so
 vendor/lib64/camera/components/libmmcamera_cac3.so
-vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 product/lib64/libarcsoftbase.so
 product/lib64/libarcsoftcalibration_jni.so
@@ -242,7 +246,6 @@ vendor/lib/libarcsoft_distortion_correction.so
 vendor/lib/libarcsoft_zoomtranslator_imp.so
 vendor/lib64/libbase64.so
 vendor/lib64/libcamera2ndk_vendor.so
-vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamxfdalgov7.so
 vendor/lib64/libcamxfdalgov8.so
 vendor/lib64/libcamxfdengine.so
@@ -258,7 +261,6 @@ vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libnpu.so
 vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsnsapi.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libsns_fastRPC_util.so
@@ -289,6 +291,7 @@ lib/motorola.hardware.popup@1.0.so
 lib64/motorola.hardware.popup@1.0.so
 
 # Sensors
+vendor/bin/capsense_reset
 vendor/etc/sensors/config/default_sensors.json
 vendor/etc/sensors/config/icm4x6xx_0.json
 vendor/etc/sensors/config/lsm6ds3c_0.json
@@ -339,11 +342,7 @@ vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/stk3a5x_0.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
-vendor/lib64/libssc.so
-vendor/bin/capsense_reset
 vendor/lib64/sensors.dt.so
 vendor/lib64/sensors.iio.so
 vendor/lib64/sensors.rp.so
 vendor/lib64/sensors.ssc.so
-vendor/lib64/sensors.tof.so
-vendor/lib64/sensors.tof.vl53l1.so
