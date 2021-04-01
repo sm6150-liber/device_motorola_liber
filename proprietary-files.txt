@@ -103,7 +103,7 @@ vendor/lib64/libgf_hal.so
 vendor/etc/qdcm_calib_data_mipi_mot_vid_focal_1080p_653.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_nova_1080p_653.xml
 
-# CameraFirmware
+# Camera (Firmware)
 vendor/firmware/CAMERA_ICP.elf
 vendor/firmware/AbovCapSense.BIN
 vendor/etc/camera/arcsoft_calibration_u_dc.bin
@@ -346,3 +346,5 @@ vendor/lib64/sensors.dt.so
 vendor/lib64/sensors.iio.so
 vendor/lib64/sensors.rp.so
 vendor/lib64/sensors.ssc.so
+vendor/lib64/sensors.tof.so
+vendor/lib64/sensors.tof.vl53l1.so
