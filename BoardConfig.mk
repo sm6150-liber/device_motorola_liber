@@ -26,7 +26,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/liber_defconfig
+TARGET_KERNEL_CONFIG := liber-perf_defconfig
 
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
